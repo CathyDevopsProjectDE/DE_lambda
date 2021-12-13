@@ -41,6 +41,8 @@ pipeline {
                       sh 'npm i python'
                       sh 'apt-get -y install python3-pip'
                       sh 'pip install aws'
+                      sh 'python3 --version'
+                      sh 'pip3 install -r requirements.txt'
                     //   sh 'pip install awscli-local'
                     //   sh 'npm install aws-ses-local -g'
                     //   sh 'npm install jest'
