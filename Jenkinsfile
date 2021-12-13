@@ -25,7 +25,7 @@ pipeline {
                   withAWS(credentials: '8058ad1c-fdf5-4ae4-b62d-a0127bcd6006', region:'ap-southeast-2'){ 
                       sh 'ls -a'
                       sh 'cat .env'
-                      sh 'rm -rf aws-ses-local'
+                      // sh 'rm -rf aws-ses-local'
                       sh 'apt-get update'
                       sh 'apt -y install curl'
                       sh 'curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh'
